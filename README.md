@@ -7,7 +7,7 @@ Simple tools that convert files between json/csv.
 `usage: csv2json [-h] [-o [OUTPUT]] [--indent [INDENT]] [input]`
 
 Input is given by either stdin or the first argument. The first line of the input should be column names.
-Output will be printed through stdout, but `-o` option will redirect it to a file.
+Output will be printed via stdout in default, however you can write it down to a file through `-o` option.
 There is also `--indent` option. If not given, the default indentation is 2 spaces.
 
     $ ./csv2json sample.csv
@@ -21,7 +21,7 @@ There is also `--indent` option. If not given, the default indentation is 2 spac
 `usage: json2csv [-h] [-o [OUTPUT]] [input]`
 
 Input is given by either stdin or the first argument.
-Output will be printed through stdout, but `-o` option will redirect it to a file. The column order of the output will be arbitrary.
+Output will be printed via stdout in default, however you can write it down to a file through `-o` option. The column order of the output will be arbitrary.
 
     $ ./json2csv sample.json
     (csv version of 'sample.json' will be printed)
