@@ -2,6 +2,10 @@
 
 Simple tools that convert files between json/csv.
 
+## Requirements
+
+- Python 3
+
 ## csv2json
 
 `usage: csv2json [-h] [-o [OUTPUT]] [--indent [INDENT]] [input]`
@@ -27,3 +31,8 @@ Output will be printed via stdout in default, however you can write it down to a
     (csv version of 'sample.json' will be printed)
     $ ./json2csv sample.json -o sample.csv
     $ ./json2csv < sample.json > sample.csv
+
+
+## License
+
+[BSD](http://opensource.org/licenses/BSD-3-Clause)
